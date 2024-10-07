@@ -13,7 +13,7 @@ function LoginInput({login}) {
       <input type="text" placeholder="Email" onChange={useEmail}/>
       <input type="password" placeholder="Password" onChange={usePassword}/>
       <Button onClick={() => login({email, password})}>Masuk</Button>
-      <p>Belum mendaftar silahkan daftar <Link to={'/register'}>di sini</Link></p>
+      <p>Belum mendaftar silahkan daftar mudah <Link to={'/register'}>di sini</Link></p>
     </div>
   );
 }
