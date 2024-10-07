@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "cypress/globals": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google",
+        "plugin:storybook/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "jsdoc",
+        "cypress"
+    ],
+    "rules": {
+        "eol-last": "off",
+        "require-jsdoc": "off",
+        "max-len": "off"
+    }
+}
