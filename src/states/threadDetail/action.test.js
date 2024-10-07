@@ -58,7 +58,7 @@ describe('asyncGetThreadDetail thunk', () => {
     });
 
     it('should dispatch action correctly when data fetching success', async () => {
-        api.getThreadDetail = () => Promise.resolve(fakeThreadDetailResponse);
+        api.getAccessToken = () => Promise.resolve(fakeThreadDetailResponse);
         const dispatch = vi.fn();
         await asyncGetThreadDetail("testing")(dispatch);
         expect(dispatch).toHaveBeenCalledWith(receiveThreadDetailActionCreator(fakeThreadDetailResponse));
