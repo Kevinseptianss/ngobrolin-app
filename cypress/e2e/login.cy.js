@@ -40,7 +40,7 @@ describe('template spec', () => {
         cy.get('input[placeholder="Password"]').type('wrong_password');
 
         // menekan tombol Login
-        cy.get('button').contains(/^Masuk$/).click();
+        cy.get('button').contains(/^Login$/).click();
 
         // memverifikasi window.alert untuk menampilkan pesan dari API
         cy.on('window:alert', (str) => {
