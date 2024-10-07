@@ -12,7 +12,7 @@ import {asyncPreloadProcess} from './states/isPreload/action';
 import CreateThread from './pages/CreateThread';
 import RegisterPage from './pages/RegisterPage';
 
-function Appp() {
+function App() {
   const {
     authUser = null,
   } = useSelector((states) => states);
